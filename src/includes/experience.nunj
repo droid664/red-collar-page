@@ -12,14 +12,19 @@
         <h3 class="experience__title">Образование</h3>
         <div class="experience__content">
             <div class="experience__content-item">
-                <h4 class="experience__subtitle">Воронежский Государственный Университет</h4>
-                <p>Прикладная математика и информатика</p>
-                <p>2017-2022</p>
+                <h4 class="experience__subtitle">Уфимский государственный авиационный технический университет</h4>
+                <p>Энергетическое машиностроение</p>
+                <p>2016-2020</p>
             </div>
+        </div>
+    </div>
+    <div class="experience__item">
+        <h3 class="experience__title">Карьера</h3>
+        <div class="experience__content">
             <div class="experience__content-item">
-                <h4 class="experience__subtitle">Воронежский Государственный Университет</h4>
-                <p>Прикладная математика и информатика</p>
-                <p>2017-2022</p>
+                <h4 class="experience__subtitle">Madseven</h4>
+                <p>HTML-верстальщик</p>
+                <p>2022 - настоящее время</p>
             </div>
         </div>
     </div>
@@ -27,9 +32,16 @@
         <h3 class="experience__title">Навыки</h3>
         <div class="experience__content">
             <ul>
-                <li>js</li>
-                <li>html</li>
-                <li>css</li>
+                <li>HTML (TWIG - шаблонизатор)</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>Сборщики: GULP и Vite</li>
+                <li>Анимации: CSS, GSAP, Canvas (2d), p5.js</li>
+                <li>GIT</li>
+                <li>Vue js</li>
+                <li>Nuxt 3 (Pinia)</li>
+                <li>Strapi CMS</li>
+                <li>REST API</li>
             </ul>
         </div>
     </div>
