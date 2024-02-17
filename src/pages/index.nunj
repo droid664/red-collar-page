@@ -7,6 +7,7 @@
         {% include '../includes/person.nunj' %}
         <div class="index-page__content">
             {% include '../includes/description.nunj' %}
+            {% include '../includes/experience.nunj' %}
         </div>
     </div>
 {% endblock %}

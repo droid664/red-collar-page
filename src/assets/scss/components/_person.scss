@@ -88,7 +88,7 @@
             }
             svg {
                 display: inline-block;
-                margin-top: -3px;
+                margin-top: toRem(-3px);
                 margin-right: toRem(16px);
                 width: toRem(24px);
                 aspect-ratio: 1;

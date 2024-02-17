@@ -1,0 +1,36 @@
+{% from '../components/icon.nunj' import icon %}
+
+<div class="experience">
+    <div class="experience__icon">
+        {{
+            icon({
+                name: 'icon-arrow-white'
+            })
+        }}
+    </div>
+    <div class="experience__item">
+        <h3 class="experience__title">Образование</h3>
+        <div class="experience__content">
+            <div class="experience__content-item">
+                <h4 class="experience__subtitle">Воронежский Государственный Университет</h4>
+                <p>Прикладная математика и информатика</p>
+                <p>2017-2022</p>
+            </div>
+            <div class="experience__content-item">
+                <h4 class="experience__subtitle">Воронежский Государственный Университет</h4>
+                <p>Прикладная математика и информатика</p>
+                <p>2017-2022</p>
+            </div>
+        </div>
+    </div>
+    <div class="experience__item">
+        <h3 class="experience__title">Навыки</h3>
+        <div class="experience__content">
+            <ul>
+                <li>js</li>
+                <li>html</li>
+                <li>css</li>
+            </ul>
+        </div>
+    </div>
+</div>

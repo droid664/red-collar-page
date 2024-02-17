@@ -20,18 +20,48 @@
         </div>
 
         <header class="person__header">
-            <h1 class="person__title">Фронтов Виталий</h1>
-            <div class="person__info">24 года, Воронеж</div>
+            <h1 class="person__title">Искандаров Мурат</h1>
+            <div class="person__info">25 лет, Уфа</div>
         </header>
         <ul class="person__contacts">
             <li class="person__contacts-item">
-                <a class="person__contacts-link" href="#">
+                <a class="person__contacts-link" href="https://github.com/droid664" target="_blank">
                     {{
                         icon({
                             name: 'icon-git'
                         })
                     }}
-                    https://github.com/
+                    https://github.com/droid664
+                </a>
+            </li>
+            <li class="person__contacts-item">
+                <a class="person__contacts-link" href="tel:89174746807">
+                    {{
+                        icon({
+                            name: 'icon-phone'
+                        })
+                    }}
+                    89174746807
+                </a>
+            </li>
+            <li class="person__contacts-item">
+                <a class="person__contacts-link" href="mailto:iskandarov.murat@gmail.com">
+                    {{
+                        icon({
+                            name: 'icon-mail'
+                        })
+                    }}
+                    iskandarov.murat@gmail.com
+                </a>
+            </li>
+            <li class="person__contacts-item">
+                <a class="person__contacts-link" href="https://t.me/droid664">
+                    {{
+                        icon({
+                            name: 'icon-telegram'
+                        })
+                    }}
+                    @droid664
                 </a>
             </li>
         </ul>

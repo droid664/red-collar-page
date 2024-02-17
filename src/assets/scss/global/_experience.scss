@@ -1,0 +1,91 @@
+.experience {
+    position: relative;
+    color: $white;
+    padding-top: toRem(45px);
+    padding-left: toRem(28px);
+    padding-right: toRem(50px);
+    padding-bottom: toRem(50px);
+    border: 1px solid $white;
+    @include MQmax($tablet) {
+        padding-bottom: toRem(30px);
+        padding-left: toRem(15px);
+        padding-right: toRem(15px);
+        padding-top: toRem(40px);
+    }
+    &__icon {
+        position: absolute;
+        top: toRem(-1px);
+        left: toRem(58px);
+        @include MQmax($tablet-m) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        svg {
+            width: toRem(60px);
+            height: toRem(20px);
+        }
+    }
+    &__title {
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: toRem(16px);
+        line-height: 100%;
+        color: $white;
+        min-width: toRem(124px);
+    }
+    &__item {
+        display: flex;
+        gap: toRem(72px);
+        margin-bottom: toRem(20px);
+        padding-bottom: toRem(20px);
+        border-bottom: 1px solid rgba($color: $white, $alpha: 0.4);
+        &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        @include MQmax($tablet-m) {
+            display: block;
+        }
+    }
+    &__subtitle,
+    p {
+        font-weight: 400;
+        font-size: toRem(18px);
+        line-height: 133%;
+        letter-spacing: -0.01em;
+        margin-bottom: 0;
+    }
+    &__content {
+        font-family: $font-family;
+        &-item {
+            margin-bottom: toRem(8px);
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        p {
+            margin-bottom: 0;
+            opacity: 0.4;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: toRem(32px);
+            @include list-style-reset;
+            li {
+                font-weight: 400;
+                font-size: toRem(18px);
+                line-height: 133%;
+                letter-spacing: -0.01em;
+            }
+        }
+    }
+}
