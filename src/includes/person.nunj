@@ -1,0 +1,39 @@
+{% from '../components/picture.nunj' import picture %}
+{% from '../components/icon.nunj' import icon %}
+
+<section class="person">
+    <div class="person__image">
+        {{
+            picture({
+                name: 'avatar',
+                ext: 'jpg'
+            })
+        }}
+    </div>
+    <div class="person__bottom">
+        <div class="person__arrow">
+            {{
+                icon({
+                    name: 'icon-arrow'
+                })
+            }}
+        </div>
+
+        <header class="person__header">
+            <h1 class="person__title">Фронтов Виталий</h1>
+            <div class="person__info">24 года, Воронеж</div>
+        </header>
+        <ul class="person__contacts">
+            <li class="person__contacts-item">
+                <a class="person__contacts-link" href="#">
+                    {{
+                        icon({
+                            name: 'icon-git'
+                        })
+                    }}
+                    https://github.com/
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>

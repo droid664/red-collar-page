@@ -12,7 +12,7 @@ export default function images() {
     return gulp
         .src(PATHS.src.images)
         .pipe(newer(PATHS.dist.images))
-        .pipe(webp({ quality: 100 }))
+        .pipe(webp({ quality: 70 }))
         .pipe(gulp.dest(PATHS.dist.images))
         .pipe(gulp.src(PATHS.src.images))
         .pipe(newer(PATHS.dist.images))

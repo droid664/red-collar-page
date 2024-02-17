@@ -7,19 +7,7 @@
 @import 'uttils/functions';
 
 html {
-    font-size: 16px;
-    @media (min-width: 1921px) {
-        font-size: 0.83vw;
-    }
-    @media (max-width: 1700px) {
-        font-size: 15px;
-    }
-    @media (max-width: 1440px) {
-        font-size: 14px;
-    }
-    @media (max-width: 1180px) {
-        font-size: 13px;
-    }
+    font-size: 1.1vw;
     @media (max-width: 992px) {
         font-size: 16px;
     }
@@ -27,7 +15,18 @@ html {
 
 body {
     overflow-x: hidden;
-    font-family: $default-font-family;
+    font-family: $font-family;
+    background: $black;
+    padding-top: toRem(26px);
+    padding-bottom: toRem(40px);
+    padding-left: toRem(40px);
+    padding-right: toRem(40px);
+    @include MQmax($tablet) {
+        padding-top: toRem(90px);
+        padding-bottom: toRem(90px);
+        padding-left: toRem(20px);
+        padding-right: toRem(20px);
+    }
 }
 
 body.lock {
@@ -48,3 +47,10 @@ body.lock {
         flex: 0 1 auto;
     }
 }
+
+// page
+@import './pages/index';
+
+// components
+@import './components/person';
+@import './components/description';

@@ -2,4 +2,11 @@
 
 {% set TITLE = 'index' %}
 
-{% block content %}{% endblock %}
+{% block content %}
+    <div class="index-page">
+        {% include '../includes/person.nunj' %}
+        <div class="index-page__content">
+            {% include '../includes/description.nunj' %}
+        </div>
+    </div>
+{% endblock %}

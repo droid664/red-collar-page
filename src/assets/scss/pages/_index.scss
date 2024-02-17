@@ -1,0 +1,8 @@
+.index-page {
+    display: grid;
+    grid-template-columns: toRem(322px) 1fr;
+    gap: toRem(30px);
+    @include MQmax($tablet-m) {
+        display: block;
+    }
+}

@@ -1,0 +1,34 @@
+.description {
+    padding-top: toRem(18px);
+    color: $white;
+    margin-bottom: toRem(32px);
+    max-width: toEm(690px);
+    @include MQmax($tablet) {
+        margin-bottom: toRem(24px);
+    }
+    p,
+    li {
+        font-weight: 400;
+        font-size: toRem(18px);
+        line-height: 133%;
+        letter-spacing: -0.01em;
+        @include MQmax($tablet) {
+            font-size: toRem(16px);
+            line-height: 125%;
+        }
+    }
+    p {
+        margin-bottom: toRem(30px);
+        & + ul,
+        & + ol {
+            margin-top: toRem(-8px);
+            margin-left: toRem(26px);
+        }
+    }
+    ul,
+    ol {
+        padding: 0;
+        margin: 0;
+        margin-bottom: toRem(28px);
+    }
+}
