@@ -1,6 +1,6 @@
 {% macro picture(props) %}
 	<picture>
-		<source type='image/webp' srcset='../assets/img/{{props.name}}.webp'>
-		<img src='../assets/img/{{props.name}}.{{props.ext}}' alt="{{props.alt}}">
+		<source type='image/webp' srcset='./assets/img/{{props.name}}.webp'>
+		<img src='./assets/img/{{props.name}}.{{props.ext}}' alt="{{props.alt}}">
 	</picture>
 {% endmacro %}

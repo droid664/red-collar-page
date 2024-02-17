@@ -4,6 +4,9 @@
 
 {% block content %}
     <div class="index-page">
+        <a class="red-collar" href="https://redcollar.ru/" target="_blank">
+            <img src="./assets/img/redcollar.svg" alt="Red collar">
+        </a>
         {% include '../includes/person.nunj' %}
         <div class="index-page__content">
             {% include '../includes/description.nunj' %}

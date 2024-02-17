@@ -1,8 +1,26 @@
 .index-page {
+    position: relative;
     display: grid;
     grid-template-columns: toRem(322px) 1fr;
     gap: toRem(30px);
     @include MQmax($tablet-m) {
         display: block;
+    }
+    .red-collar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-50%);
+        @include MQmax($tablet) {
+            top: toRem(-60px);
+            left: 0;
+            right: initial;
+        }
+        img {
+            width: toRem(240px);
+            @include MQmax($tablet-m) {
+                width: toRem(200px);
+            }
+        }
     }
 }
