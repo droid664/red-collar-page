@@ -10,7 +10,6 @@ import watcher from './gulp/tasks/watcher.js'
 import server from './gulp/tasks/server.js'
 import fonts from './gulp/tasks/fonts.js'
 import zip from './gulp/tasks/zip.js'
-import deploy from './gulp/tasks/deploy.js'
 import {
     cleanJs,
     cleanManifest,
@@ -26,7 +25,5 @@ gulp.task('hash', gulp.series(revHash, revHashReplace, cleanManifest, cleanJs, c
 gulp.task('production', gulp.series(clean, 'build', 'hash'))
 
 gulp.task('zip', gulp.series(clean, 'build', zip))
-
-gulp.task('deploy', gulp.series(clean, 'build', 'hash', deploy))
 
 gulp.task('default', gulp.parallel('build', watcher, server))
